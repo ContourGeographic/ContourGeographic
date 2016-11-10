@@ -32,6 +32,13 @@
             left: 0px; 
             width: 980px; 
         }
+        .silex-id-1478553602664-0 {
+            min-height: 400px; 
+            width: 980px; 
+            background-color: rgba(27,158,255,1); 
+            top: 272px; 
+            left: 1px; 
+        }
         .silex-id-1478489278287-4 {
             min-height: 30px; 
             width: 400px; 
@@ -164,13 +171,6 @@
             top: 48px; 
             left: 40px; 
             background-color: transparent; 
-        }
-        .silex-id-1478553602664-0 {
-            min-height: 400px; 
-            width: 980px; 
-            background-color: rgba(27,158,255,1); 
-            top: 272px; 
-            left: 1px; 
         }
         .silex-id-1478692014152-0 {
             min-height: 60px; 
@@ -326,7 +326,7 @@
 
     <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900" rel="stylesheet" type="text/css" class="silex-custom-font">
     <style id="current-page-style">
-        .page-projects{display:inherit; }
+        .page-home{display:inherit; }
     </style>
     <!-- Silex HEAD tag do not remove -->
     <!-- End of Silex HEAD tag do not remove -->
@@ -347,12 +347,11 @@
 
 
 
-        <a id="page-home" data-silex-type="page" class="page-element">HOME</a><a id="page-technology" data-silex-type="page" class="page-element">TECHNOLOGY</a><a id="page-what-is-contour-geographic-" data-silex-type="page" class="page-element">WHAT IS CONTOUR GEOGRAPHIC?</a>
+        <a id="page-home" data-silex-type="page" class="page-element page-link-active">HOME</a><a id="page-technology" data-silex-type="page" class="page-element">TECHNOLOGY</a><a id="page-what-is-contour-geographic-" data-silex-type="page" class="page-element">WHAT IS CONTOUR GEOGRAPHIC?</a>
         <a
         id="page-services" data-silex-type="page" class="page-element">SERVICES</a><a id="page-photogrammetry" data-silex-type="page" class="page-element">Photogrammetry</a><a id="page-soil-science" data-silex-type="page" class="page-element">Soil Science</a><a id="page-geovisualization" data-silex-type="page" class="page-element">Geovisualization</a>
             <a
-            id="page-publications" data-silex-type="page" class="page-element">PUBLICATIONS</a><a id="page-projects" data-silex-type="page" class="page-element page-link-active">PROJECTS</a><a id="page-news-amp-media" data-silex-type="page" class="page-element">NEWS &amp; MEDIA</a><a id="page-contact" data-silex-type="page"
-                class="page-element">CONTACT</a></div>
+            id="page-publications" data-silex-type="page" class="page-element">PUBLICATIONS</a><a id="page-projects" data-silex-type="page" class="page-element">PROJECTS</a><a id="page-news-amp-media" data-silex-type="page" class="page-element">NEWS &amp; MEDIA</a><a id="page-contact" data-silex-type="page" class="page-element">CONTACT</a></div>
 
 
 
@@ -375,6 +374,36 @@
 
     <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1474394621033-3 section-element" data-silex-id="silex-id-1474394621033-3">
         <div data-silex-type="container" class="editable-style silex-element-content default-site-width silex-id-1474394621032-2 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1474394621032-2">
+            <div data-silex-type="html" class="editable-style silex-id-1478553602664-0 html-element page-home paged-element" data-silex-id="silex-id-1478553602664-0">
+                <div class="silex-element-content">
+
+
+                    <script src="http://www.webglearth.com/v2/api.js"></script>
+                    <script>
+                        function initialize() {
+                            var earth = new WE.map('earth_div');
+                            earth.setView([44, 2], 6);
+                            var base = WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+                              attribution: '© OpenStreetMap contributors'
+                            }).addTo(earth);
+                            var swiss = WE.tileLayerJSON('http://tileserver.maptiler.com/swissimage25m.json');
+                            swiss.addTo(earth);
+                            earth.setTilt(50);
+                            earth.setHeading(300);
+                          }
+                    </script>
+                    <style>
+                        html, body{padding: 0; margin: 0;}
+                          #earth_div{top: 0; right: 0; bottom: 0; left: 0;
+                                     background-color: #F8EEEE; position: absolute !important;}
+                    </style>
+                    <title>WebGL Earth API: TileJSON</title>
+
+
+                    <div id="earth_div"></div>
+
+                </div>
+            </div>
 
             <div data-silex-type="text" class="editable-style silex-id-1478489278287-4 text-element page-photogrammetry paged-element" data-silex-id="silex-id-1478489278287-4">
                 <div class="silex-element-content normal">
@@ -517,7 +546,7 @@
             </div>
             <div data-silex-type="container" class="editable-style container-element silex-id-1478520536085-91" data-silex-id="silex-id-1478520536085-91">
 
-                <div data-silex-type="image" class="editable-style image-element silex-id-1478520536086-92" data-silex-id="silex-id-1478520536086-92" title="Contour Geographic" data-silex-href="#!page-home"><img src="../../../../../dropbox/exec/get/Website%20Images/FinalCG%20(3).png" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style image-element silex-id-1478520536086-92 page-link-active" data-silex-id="silex-id-1478520536086-92" title="Contour Geographic" data-silex-href="#!page-home"><img src="../../../../../dropbox/exec/get/Website%20Images/FinalCG%20(3).png" class="silex-element-content"></div>
             </div>
 
 
@@ -528,37 +557,8 @@
 
 
 
-            <div data-silex-type="html" class="editable-style silex-id-1478553602664-0 html-element page-home paged-element" data-silex-id="silex-id-1478553602664-0">
-                <div class="silex-element-content">
 
-
-                    <script src="http://www.webglearth.com/v2/api.js"></script>
-                    <script>
-                        function initialize() {
-                            var earth = new WE.map('earth_div');
-                            earth.setView([44, 2], 6);
-                            var base = WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-                              attribution: '© OpenStreetMap contributors'
-                            }).addTo(earth);
-                            var swiss = WE.tileLayerJSON('http://tileserver.maptiler.com/swissimage25m.json');
-                            swiss.addTo(earth);
-                            earth.setTilt(50);
-                            earth.setHeading(300);
-                          }
-                    </script>
-                    <style>
-                        html, body{padding: 0; margin: 0;}
-                          #earth_div{top: 0; right: 0; bottom: 0; left: 0;
-                                     background-color: #F8EEEE; position: absolute !important;}
-                    </style>
-                    <title>WebGL Earth API: TileJSON</title>
-
-
-                    <div id="earth_div"></div>
-
-                </div>
-            </div>
-            <div data-silex-type="container" class="editable-style silex-id-1478692014152-0 container-element" data-silex-id="silex-id-1478692014152-0" title="Contour Geographic" data-silex-href="#!page-home">
+            <div data-silex-type="container" class="editable-style silex-id-1478692014152-0 container-element page-link-active" data-silex-id="silex-id-1478692014152-0" title="Contour Geographic" data-silex-href="#!page-home">
                 <div data-silex-type="container" class="editable-style silex-id-1478692045471-1 container-element" data-silex-id="silex-id-1478692045471-1">
                     <div data-silex-type="text" class="editable-style silex-id-1478692560036-7 text-element" data-silex-id="silex-id-1478692560036-7" data-silex-href="#!page-what-is-contour-geographic-">
                         <div class="silex-element-content normal">
@@ -593,6 +593,7 @@
                             <div style="text-align: center;"><span style="font-weight: lighter;">PROJECTS</span></div>
                         </div>
                     </div>
+
                 </div>
                 <div data-silex-type="container" class="editable-style container-element silex-id-1478692445740-6" data-silex-id="silex-id-1478692445740-6">
                     <div data-silex-type="text" class="editable-style text-element silex-id-1478692660495-12" data-silex-id="silex-id-1478692660495-12" data-silex-href="#!page-news-amp-media">
